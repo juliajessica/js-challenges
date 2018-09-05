@@ -2,9 +2,10 @@
 
 :root {
   --base: #778499;
-  --spacing: 0rem;
-  --blur: 10px;
+  --spacing: .5rem;
+  --blur: 0px;
   --degrees: 0;
+  --radius: 0;
 }
 /* using these css variable for styling and for js transitions */
 
@@ -18,16 +19,25 @@ body {
   text-align: center;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 .image {
   padding: var(--spacing);
   background: var(--base);
   filter: blur(var(--blur));
   transform: rotate(var(--degrees));
+  border-radius: var(--radius);
 }
 
 .controllers {
   margin-bottom: 2rem;
-  padding-bottom: 30px;
+  padding-bottom: 45px;
+}
+
+label {
+  padding: 13px;
 }
 
 input {
