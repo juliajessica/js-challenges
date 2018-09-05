@@ -3,8 +3,9 @@
 :root {
   --base: #778499;
   --spacing: 1rem;
-  --blue: 1rem;
+  --blur: 10px;
 }
+/* using these css variable for styling and for js transitions */
 
 body {
   margin: 0;
@@ -22,9 +23,9 @@ body {
   filter: blur(var(--blur));
 }
 
-.controls {
+.controllers {
   margin-bottom: 2rem;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 input {
